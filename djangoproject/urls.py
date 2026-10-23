@@ -18,5 +18,6 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+	path('admin/', admin.site.urls),
+	 path('', include('calendar_app.urls')),  # This routes root traffic to your calendar app
 ]
